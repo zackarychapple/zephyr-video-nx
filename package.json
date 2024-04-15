@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "build": "npx nx build",
+    "build:watch": "ZE_API=https://api-dev.zephyr-cloud.io npx nx build -- --watch --verbose",
     "start": "npx nx serve",
     "lint": "npx nx lint",
     "test": "npx nx test",
@@ -14,7 +15,8 @@
     "@nx/rspack": "18.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "zephyr-webpack-plugin": "^0.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.14.5",
